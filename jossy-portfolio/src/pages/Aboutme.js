@@ -1,5 +1,6 @@
 import Card from "../components/Card";
 import Footer from "../components/Footer";
+import { motion } from "framer-motion";
 
 
 export default function Aboutme(){
@@ -13,6 +14,14 @@ export default function Aboutme(){
                 interactive features that enhance the user experience
             </p>
         </div>
+
+
+        <motion.div
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1.5, ease: "easeOut" }}
+      viewport={{ once: true }}   // animates only the first time
+        >
 
         <div className="card">
 
@@ -73,7 +82,7 @@ export default function Aboutme(){
             </div>
 
         </div>
-
+        </motion.div>
 
         <a className="aboutbutton"  href="Footer">Let's Work Together</a>
 

@@ -1,11 +1,19 @@
 
 import logo from "../images/photo_2024-06-13_23-23-07.jpg"
-
+import {motion} from "framer-motion"
 export default function Home(){
     
 return<div>
 
+           <motion.div
+      initial={{ opacity: 0, x: 50 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ duration: 1.2, ease: "easeOut" }}
+      viewport={{ once: true }}   // animates only the first time
+      className="p-5 rounded-xl shadow-lg w-64 mx-auto my-20 bg-white"
+     >
     <div className="home">
+
 
         <div className="home-image">
             <img src={logo} alt="me"/>
@@ -23,6 +31,7 @@ return<div>
      
         
     </div>
+     </motion.div>
 
 
 </div>
