@@ -10,7 +10,6 @@ return<div>
       whileInView={{ opacity: 1, x: 0 }}
       transition={{ duration: 1.2, ease: "easeOut" }}
       viewport={{ once: true }}   // animates only the first time
-      className="p-5 rounded-xl shadow-lg w-64 mx-auto my-20 bg-white"
      >
     <div className="home">
 
@@ -21,8 +20,8 @@ return<div>
 
         <div className="home-text">
             <h5 style={{margin:"-10px",color:"#333333ff"}}>Hi I'm </h5>
-            <h1 style={{fontSize:"35px"}}>Yosef Tanu<br/>  </h1>
-            <h1 style={{borderRadius:"25px",padding:"3px 10px",boxShadow:"1px 2px",}}>Front-End website Developer</h1>
+            <h1 style={{fontSize:"35px"}}>Yosef Tanu </h1>
+            <h1 className="frontend" style={{borderRadius:"10px",padding:"3px 10px",}}>Front-End website Developer</h1>
             
             <a style={{textDecoration:"none", backgroundColor:"#030836ff",color:"white",padding:"10px",borderRadius:"10px"}} href="Aboutme">About me</a>
 

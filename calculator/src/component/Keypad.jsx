@@ -15,10 +15,17 @@ return(
 
     <div style={{display:"flex", flexDirection:"row", justifyContent:"center"}}>
     
-        <Button style={{width:"53px",height:"31px",color:"white",backgroundColor:"red"}} label="AC" onClick={() => dispatch(clearAll())} className="function" />
-        <Button style={{width:"53px",height:"31px",color:"white",backgroundColor:"red"}} label="DEL" onClick={() => dispatch(deleteLast())} className="function" />
-        <Button style={{width:"35px",height:"31px",backgroundColor:"#79f3ca"}} label="√" onClick={() => dispatch(applyFunction('sqrt'))} className="function" />
-        <Button style={{margin:"0px -6px 0px 0px",width:"32px",height:"31px",backgroundColor:"#79f3ca"}} label="/" onClick={() => dispatch(chooseOperator('/'))} className="operator" />
+        <Button 
+        style={{width:"53px",height:"31px",color:"white",backgroundColor:"red"}} label="AC" onClick={() => dispatch(clearAll())} className="function" />
+
+        <Button 
+        style={{width:"53px",height:"31px",color:"white",backgroundColor:"red"}} label="DEL" onClick={() => dispatch(deleteLast())} className="function" />
+
+        <Button 
+        style={{width:"35px",height:"31px",backgroundColor:"#79f3ca"}} label="√" onClick={() => dispatch(applyFunction('sqrt'))} className="function" />
+
+        <Button 
+        style={{margin:"0px -6px 0px 0px",width:"32px",height:"31px",backgroundColor:"#79f3ca"}} label="/" onClick={() => dispatch(chooseOperator('/'))} className="operator" />
     
     </div>
 

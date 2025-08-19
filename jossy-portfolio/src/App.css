@@ -15,7 +15,7 @@
   }
 } */
 body{
-  background-color: rgb(255, 247, 223);
+  background-color: #fff7df;
   height: auto;
   transition: background 5s ease, transform 1s ease;
 }
@@ -64,6 +64,39 @@ body{
   display:flex; 
   flex-direction:row;
 }
+.frontend{
+  overflow: hidden;
+   border-right: .15em solid #020202;
+  border-left:.15em solid black; 
+  white-space:nowrap;
+  letter-spacing: 1px;
+  animation: typing 3s steps(30,end),blink.75s;
+}
+
+@keyframes typing{
+  from{width:0}
+  to{width:100%}
+}
+@keyframes blink{
+  50%{border-color: transparent;}
+}
+
+/* .im{
+  overflow:visible;
+  border-right: .15em solid #020202;
+  border-left:.15em solid black; 
+  white-space:nowrap;
+  letter-spacing: 1px;
+  animation: typing 2s steps(1000,end),blink.75s;
+}
+@keyframes typing{
+  from{width:0}
+  to{width:100%}
+}
+@keyframes blink{
+  50%{border-color: transparent;}
+} */
+
 
 .home-image{
   display:flex;
@@ -84,7 +117,7 @@ body{
 }
 
 .about{
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
   justify-content: center;
 }
@@ -98,18 +131,19 @@ body{
 
 .card{
   display: flex;
-  flex-direction: row;
-  height:fit-content;
+  flex-direction: column;
+  justify-content: space-around;
+  /* height:fit-content; */
 }
 
  .aboutcard{
-  background-color:  rgb(255, 255, 255);
+  background-color:  #ffffff;
   display: inline-flex;
   flex-direction: column;
   justify-content: center;
-  margin:0px 90px; 
+  margin:50px 400px; 
   padding:10px 20px;
-  border-radius:50px; 
+  border-radius:40px; 
   width:450px;
   height: fit-content;
   box-Shadow:0 8px 20px rgba(0,0,0,0.3);
@@ -132,13 +166,13 @@ body{
   flex-direction: column;
   justify-content: center;
   background: linear-gradient(-145deg, #0e0d0d , #0c0c0c);
-  color:rgb(175, 175, 243);
+  color:#00ffff;
   transform: translateY(-10px);
-  margin:0px 90px;  
+  margin:50px 400px;  
   padding:10px 20px;
-  border-radius:30px; 
+  border-radius:40px; 
   width:450px;
-  box-Shadow:0 8px 20px rgba(247, 218, 140, 0.6);
+  box-Shadow:0 8px 20px rgba(76, 12, 223, 0.8);
 }
 
 .pro, .pro1, .pro2{
@@ -150,6 +184,7 @@ body{
   border-radius: 10px;
 }
 
+
 .pros{
   display: flex;
   justify-content: center;
@@ -157,26 +192,53 @@ body{
 
 }
 
+.aboutprofession{
+  display: flex;
+  flex-direction: row;
+}
+
 
 .aboutcard2{
   background-color:  rgb(255, 255, 255);
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
   justify-content: center;
-  margin:0px 90px; 
+  margin:0px 50px 50px 100px; 
   padding:10px 20px;
   border-radius:50px; 
   width:450px;
   box-Shadow:0 8px 20px rgba(0,0,0,0.3);
-  transition: background 10s ease, transform 1s ease;
+  /* transition: background 10s ease, transform 1s ease; */
 }
 
-.aboutcard2 h3{
+.aboutcard3{
+  background-color:  rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin:0px 100px 50px 50px; 
+  padding:10px 20px;
+  border-radius:50px; 
+  width:450px;
+  box-Shadow:0 8px 20px rgba(0,0,0,0.3);
+  /* transition: background 10s ease, transform 1s ease; */
+}
+
+.aboutcard2 h3 ,.aboutcard3 h3{
   text-align: center;
   font-size: medium;
   font-weight: 700;
   text-decoration: underline;
 }
+
+.aboutcard2:hover{
+  box-Shadow:0 8px 20px #4542cce0;
+}
+
+.aboutcard3:hover{
+    box-Shadow:0 8px 20px #4542cce0;
+}
+
 
 .pro3 ,.pro4{
    display: inline-flex;
@@ -184,14 +246,14 @@ body{
   border:solid rgb(245, 221, 157) 2px;
   margin: 10px 0px;
   padding: 10px 10px;
-  border-radius: 10px;
+  border-radius: 15px;
 }
 
 .aboutbutton{
   display: flex;
-  justify-content: center;
+  justify-content:space-evenly;
   background-color:#030836ff;
-  margin:-100px 150px -10px 300px;  
+  margin:50px 520px -100px 520px;  
   padding:10px; 
   width: 200px;
   height: fit-content;
